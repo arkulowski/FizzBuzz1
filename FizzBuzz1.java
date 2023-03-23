@@ -3,23 +3,19 @@ import java.util.Scanner;
 
 public class FizzBuzz1 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt(); 
-        boolean fizz =  n % 3 == 0;
-        boolean buzz = n % 5 == 0; 
-        if()
-        {
-            System.out.println("Fizz");
+        for (int num = 1; num <= 100; num++) {
+            if (num % 3 == 0 && num % 5 == 0) {
+                System.out.println("FizzBuzz");
+            } else if (num % 3 == 0) {
+                System.out.println("Fizz");
+            } else if (num % 5 == 0) {
+                System.out.println("Buzz");
+            } else {
+                System.out.println(num);
+            }
         }
-        if()
-        {
-            System.out.println("Buzz");
-        }
-        if(!Fizz && !Buzz)
-        {
-            System.out.println(n)
-        }
-        
-
     }
 }
+
+
+  
